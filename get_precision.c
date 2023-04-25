@@ -33,7 +33,7 @@ int get_precision(const char *format, int *i, va_list args)
 		else if (format[curr_i] == '*')
 		{
 			curr_i++;
-			precision = va_arg(list, int);
+			precision = va_arg(args, int);
 			break;
 		}
 		else
